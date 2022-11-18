@@ -18,5 +18,5 @@ Feature: authentication
     Given get call de API "/Account/v1"
     And pass de credential userName "" and password ""
     When call "/Authorized"
-    Then return status 404
-    And return message "User not found!"
+    Then return status 400
+    And return message "UserName and Password required."
