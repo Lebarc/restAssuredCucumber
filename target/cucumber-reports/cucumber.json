@@ -1,0 +1,187 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-18T14:40:14.480Z",
+        "line": 3,
+        "name": "Verify success autentication",
+        "description": "",
+        "id": "autenticacao;verify-success-autentication",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 531568000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "get call de URL \"/Account/v1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/Account/v1\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.autenticationStets.getCallDeURL(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1484231000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "pass de credential userName \"leoQA\" and password \"Teste@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"leoQA\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Teste@123\"",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.autenticationStets.passDeCredentialUserNameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 835123000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "call \"/Authorized\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/Authorized\"",
+                  "offset": 5
+                }
+              ],
+              "location": "steps.autenticationStets.call(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2589000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "return status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.autenticationStets.returnStatus(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-18T14:40:17.358Z",
+        "line": 11,
+        "name": "Verify user not found",
+        "description": "",
+        "id": "autenticacao;verify-user-not-found",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 561000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "get call de URL \"/Account/v1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/Account/v1\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.autenticationStets.getCallDeURL(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 912238000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "pass de credential userName \"leoQ\" and password \"Teste@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"leoQ\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Teste@123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.autenticationStets.passDeCredentialUserNameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 811436000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "call \"/Authorized\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/Authorized\"",
+                  "offset": 5
+                }
+              ],
+              "location": "steps.autenticationStets.call(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 862000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "return status 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 14
+                }
+              ],
+              "location": "steps.autenticationStets.returnStatus(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "autenticacao",
+    "description": "",
+    "id": "autenticacao",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/autenticacao.feature",
+    "tags": []
+  }
+]
